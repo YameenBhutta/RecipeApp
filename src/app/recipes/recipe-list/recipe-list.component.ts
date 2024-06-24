@@ -8,12 +8,8 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
-  
-  new Recipe('Test Recipe', 'Test Recipe decription','https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=556,505'),
-  
-  new Recipe('Test Recipe', 'Test Recipe decription','https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=556,505'),
-  
-  
+      {name:'test',description:'test description',imagePath:''},
+      {name:'test',description:'test description',imagePath:''},
   ];
 
   constructor() { }

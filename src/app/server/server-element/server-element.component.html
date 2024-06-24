@@ -1,0 +1,13 @@
+<div class="panel border p-4 mt-4">
+    <strong class="text-capitalize">{{element.name}}</strong>
+    <!-- <p *ngIf="element.type === 'server'" style="color: blue;">
+    {{element.content}}
+    </p>
+    <p *ngIf="element.type === 'blueprint'" style="color: red;">
+        {{element.content}}
+        </p> -->
+        
+        <p [ngStyle]="{'color':element.type === 'blueprint' ?'red':'blue'}">
+            {{element.content}}
+            </p>
+    </div>

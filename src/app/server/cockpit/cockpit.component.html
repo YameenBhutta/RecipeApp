@@ -1,0 +1,17 @@
+<b class="mb-5 d-block">Add a New Server or BluePrint</b>
+
+<div>
+    <span class="mb-4 d-block">
+        <label>Server Name</label>
+        <input type="text" class="form-control rounded-0"  [(ngModel)]="newServerName"/>
+    </span>
+
+    <span>
+        <label>Server Content</label>
+        <input type="text" class="form-control rounded-0" [(ngModel)]="newServerContent"/>
+    </span>
+</div>
+<div class="btn-group gap-4 mt-4">
+<button type="button" class="btn btn-primary rounded-0" (click)="onAddServer()">Add Server</button>
+<button type="button" class="btn btn-success rounded-0" (click)="onAddBlueprint()">Add Server Blueprint</button>
+</div>

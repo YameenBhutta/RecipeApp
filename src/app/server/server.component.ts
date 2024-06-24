@@ -6,27 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./server.component.css'],
 })
 export class ServerComponent implements OnInit {
-  serverElements: any = [];
-  newServerName: any = '';
-  newServerContent: any = '';
+  serverElements = [{type: 'server', name:'testServer', content:'description'}];
+ 
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  onAddServer() {
-    this.serverElements.push({
-      type: 'server',
-      name: this.newServerName,
-      content: this.newServerContent,
-    });
-  }
+
   
-  onAddBlueprint() {
-    this.serverElements.push({
-      type: 'blueprint',
-      name: this.newServerName,
-      content: this.newServerContent,
-    });
-  }
+
 }
